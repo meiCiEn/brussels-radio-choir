@@ -126,7 +126,7 @@ header {
     flex-wrap: wrap;
 }
 
-.logo-title {
+.header-branding {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,12 +134,12 @@ header {
     flex-wrap: wrap;
 }
 
-.logo-title img {
+.header-branding img {
     width: 30px;
     height: auto;
 }
 
-.logo-title h1 {
+.header-branding h1 {
     font-size: 1.5rem;
     margin: 0;
 }
@@ -354,6 +354,50 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* =======================
+   FOOTER
+   ======================= */
+
+   .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+   }
+
+.footer-branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-branding img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-branding h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon img {
+    height: 100%;
 }
 
 /* =======================
