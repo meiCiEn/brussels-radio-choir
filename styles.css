@@ -106,7 +106,7 @@ input[type="email"] {
     font-size: 1.2rem;
     width: fit-content;
     max-width: 200px;
-  }
+}
 
 /* =======================
    HEADER & FOOTER
@@ -360,11 +360,11 @@ footer p {
    FOOTER
    ======================= */
 
-   .footer-content {
+.footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between
-   }
+}
 
 .footer-branding {
     display: flex;
@@ -414,4 +414,71 @@ footer p {
 
 .section-pink {
     background-color: var(--pink);
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media (max-width: 1024px) {
+    /* Tablets and small laptops */
+
+}
+
+@media (max-width: 768px) {
+
+    /* Tablets and large phones in landscape */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .header-branding {
+        margin-bottom: 2rem;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about,
+    .events {
+      flex-direction: column; 
+    }
+  
+    .about-left,
+    .about-right,
+    .events-left,
+    .events-right {
+    flex-basis: 100%; /* so they stack properly */
+    }
+  
+    .image-grid {
+      max-width: 100%;
+    }
+  
+    .events-image {
+      width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile phones */
+
 }
